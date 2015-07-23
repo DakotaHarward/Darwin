@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>593FB11D-214B-446D-848E-7F150BA0F2CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Darwin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>65B46396CD2EE7E83E6009BCF4C49A7D0E7B286F</key>
+		<string>https://github.com/DakotaHarward/Darwin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mobile/Darwin/Darwin.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>65B46396CD2EE7E83E6009BCF4C49A7D0E7B286F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DakotaHarward/Darwin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>65B46396CD2EE7E83E6009BCF4C49A7D0E7B286F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65B46396CD2EE7E83E6009BCF4C49A7D0E7B286F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Darwin</string>
+		</dict>
+	</array>
+</dict>
+</plist>

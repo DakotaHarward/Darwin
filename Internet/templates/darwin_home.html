@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Darwin</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/skel.min.js"></script>
+		<script src="../static/js/skel-layers.min.js"></script>
+		<script src="../static/js/init.js"></script>
+        <script src="../static/js/socketio.min.js"></script>
+        <script src="../static/js/main.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="../static/css/skel.css" />
+			<link rel="stylesheet" href="../static/css/style.css" />
+			<link rel="stylesheet" href="../static/css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Darwin</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about_darwin.html">About Darwin</a></li>
+						<li><a href="darwin_home.html">Launch Darwin</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="darwinbackground">
+				<div class="container">
+
+					<header class="major">
+						<h2>Hello Sir. It's Nice To See You.</h2>
+						<p>Below you can adjust me to your liking.</p>
+					</header>
+					<a id="changealarm" class="button big" style="margin: 10px;">Adjust Alarm Settings</a>
+                    <p id="settingssaved">Settings Saved...</p>
+                    <div class="container" id="alarmsettings">
+                        <div class="4u 12u$(small)">
+                            <input id="priority-low" type="radio" checked="" name="priority"></input>
+                            <label for="priority-low">Use Alarm</label>
+                        </div>
+                        <div class="4u 12u$(small)">
+                            <input id="priority-normal" type="radio" name="priority"></input>
+                            <label for="priority-normal">Don't Use Alarm</label>
+                        </div>
+                        <h3>Please Enter The Time You Would Like To Wake Up At (Military Time Please):</h3>
+                        <p>Please Enter Hour:</p>
+                        <input id="hourfield" type="text" placeholder="Hour (format HH)" value=""></input>
+                        <p>Please Enter Minute:</p>
+                        <input id="minutefield" type="text" placeholder="Minute (format MM)" value=""></input>
+                        <a id="enteralarm" class="button default" style="margin: 10px;">Save Settings</a>
+                        <a id="cancelalarm" class="button default" style="margin: 10px;">Cancel</a>
+                    </div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Darwin</h3>
+							<p>The last personal assitant you'll ever need. Period.</p>
+							<ul class="alt">
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; 2015 Avinity Corporation. All rights reserved worldwide.</li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
