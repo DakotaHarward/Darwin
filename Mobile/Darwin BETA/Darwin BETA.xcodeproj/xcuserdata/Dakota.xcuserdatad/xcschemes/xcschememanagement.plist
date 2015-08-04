@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Darwin.xcscheme</key>
+		<key>Darwin BETA.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D07DBEE1B700C6D007649AE</key>
+		<key>1D07DC2D1B7133FB007649AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D07DC071B700C6F007649AE</key>
+		<key>1D07DC491B7133FC007649AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D07DC121B700C6F007649AE</key>
+		<key>1D07DC541B7133FD007649AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

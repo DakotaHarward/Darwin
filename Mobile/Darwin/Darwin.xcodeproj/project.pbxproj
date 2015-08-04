@@ -7,51 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D6E38031B61A19300342E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E38021B61A19300342E7A /* AppDelegate.swift */; };
-		1D6E38051B61A19300342E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E38041B61A19300342E7A /* ViewController.swift */; };
-		1D6E38081B61A19300342E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6E38061B61A19300342E7A /* Main.storyboard */; };
-		1D6E380A1B61A19300342E7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6E38091B61A19300342E7A /* Images.xcassets */; };
-		1D6E380D1B61A19300342E7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6E380B1B61A19300342E7A /* LaunchScreen.xib */; };
-		1D6E38191B61A19400342E7A /* DarwinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E38181B61A19400342E7A /* DarwinTests.swift */; };
-		684EC841181B8D8E5FE8DDD9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C504E2055A801D2B19D6C16 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D07DBF41B700C6D007649AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07DBF31B700C6D007649AE /* main.m */; };
+		1D07DBF71B700C6D007649AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07DBF61B700C6D007649AE /* AppDelegate.m */; };
+		1D07DBFA1B700C6D007649AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07DBF91B700C6D007649AE /* ViewController.m */; };
+		1D07DBFD1B700C6D007649AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D07DBFB1B700C6D007649AE /* Main.storyboard */; };
+		1D07DBFF1B700C6D007649AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D07DBFE1B700C6D007649AE /* Assets.xcassets */; };
+		1D07DC021B700C6D007649AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D07DC001B700C6D007649AE /* LaunchScreen.storyboard */; };
+		1D07DC0D1B700C6F007649AE /* DarwinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07DC0C1B700C6F007649AE /* DarwinTests.m */; };
+		1D07DC181B700C6F007649AE /* DarwinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D07DC171B700C6F007649AE /* DarwinUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D6E38131B61A19400342E7A /* PBXContainerItemProxy */ = {
+		1D07DC091B700C6F007649AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1D6E37F51B61A19300342E7A /* Project object */;
+			containerPortal = 1D07DBE71B700C6D007649AE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D6E37FC1B61A19300342E7A;
+			remoteGlobalIDString = 1D07DBEE1B700C6D007649AE;
+			remoteInfo = Darwin;
+		};
+		1D07DC141B700C6F007649AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D07DBE71B700C6D007649AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D07DBEE1B700C6D007649AE;
 			remoteInfo = Darwin;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D6E37FD1B61A19300342E7A /* Darwin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darwin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D6E38011B61A19300342E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D6E38021B61A19300342E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D6E38041B61A19300342E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D6E38071B61A19300342E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1D6E38091B61A19300342E7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1D6E380C1B61A19300342E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		1D6E38121B61A19400342E7A /* DarwinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarwinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D6E38171B61A19400342E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D6E38181B61A19400342E7A /* DarwinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwinTests.swift; sourceTree = "<group>"; };
-		5C504E2055A801D2B19D6C16 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		703A70330E14716C6F5634E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		84F0B0FF78BD50FCD5078C0A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D07DBEF1B700C6D007649AE /* Darwin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darwin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D07DBF31B700C6D007649AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D07DBF51B700C6D007649AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D07DBF61B700C6D007649AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D07DBF81B700C6D007649AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1D07DBF91B700C6D007649AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D07DBFC1B700C6D007649AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D07DBFE1B700C6D007649AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D07DC011B700C6D007649AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D07DC031B700C6E007649AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D07DC081B700C6F007649AE /* DarwinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarwinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D07DC0C1B700C6F007649AE /* DarwinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarwinTests.m; sourceTree = "<group>"; };
+		1D07DC0E1B700C6F007649AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D07DC131B700C6F007649AE /* DarwinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarwinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D07DC171B700C6F007649AE /* DarwinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarwinUITests.m; sourceTree = "<group>"; };
+		1D07DC191B700C6F007649AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D6E37FA1B61A19300342E7A /* Frameworks */ = {
+		1D07DBEC1B700C6D007649AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684EC841181B8D8E5FE8DDD9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D6E380F1B61A19400342E7A /* Frameworks */ = {
+		1D07DC051B700C6F007649AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D07DC101B700C6F007649AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,94 +78,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D6E37F41B61A19300342E7A = {
+		1D07DBE61B700C6D007649AE = {
 			isa = PBXGroup;
 			children = (
-				1D6E37FF1B61A19300342E7A /* Darwin */,
-				1D6E38151B61A19400342E7A /* DarwinTests */,
-				1D6E37FE1B61A19300342E7A /* Products */,
-				D6799EE4766D16E205C9DC27 /* Pods */,
-				55E22CF7D73055A0C6B1936E /* Frameworks */,
+				1D07DBF11B700C6D007649AE /* Darwin */,
+				1D07DC0B1B700C6F007649AE /* DarwinTests */,
+				1D07DC161B700C6F007649AE /* DarwinUITests */,
+				1D07DBF01B700C6D007649AE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1D6E37FE1B61A19300342E7A /* Products */ = {
+		1D07DBF01B700C6D007649AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E37FD1B61A19300342E7A /* Darwin.app */,
-				1D6E38121B61A19400342E7A /* DarwinTests.xctest */,
+				1D07DBEF1B700C6D007649AE /* Darwin.app */,
+				1D07DC081B700C6F007649AE /* DarwinTests.xctest */,
+				1D07DC131B700C6F007649AE /* DarwinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1D6E37FF1B61A19300342E7A /* Darwin */ = {
+		1D07DBF11B700C6D007649AE /* Darwin */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E38021B61A19300342E7A /* AppDelegate.swift */,
-				1D6E38041B61A19300342E7A /* ViewController.swift */,
-				1D6E38061B61A19300342E7A /* Main.storyboard */,
-				1D6E38091B61A19300342E7A /* Images.xcassets */,
-				1D6E380B1B61A19300342E7A /* LaunchScreen.xib */,
-				1D6E38001B61A19300342E7A /* Supporting Files */,
+				1D07DBF51B700C6D007649AE /* AppDelegate.h */,
+				1D07DBF61B700C6D007649AE /* AppDelegate.m */,
+				1D07DBF81B700C6D007649AE /* ViewController.h */,
+				1D07DBF91B700C6D007649AE /* ViewController.m */,
+				1D07DBFB1B700C6D007649AE /* Main.storyboard */,
+				1D07DBFE1B700C6D007649AE /* Assets.xcassets */,
+				1D07DC001B700C6D007649AE /* LaunchScreen.storyboard */,
+				1D07DC031B700C6E007649AE /* Info.plist */,
+				1D07DBF21B700C6D007649AE /* Supporting Files */,
 			);
 			path = Darwin;
 			sourceTree = "<group>";
 		};
-		1D6E38001B61A19300342E7A /* Supporting Files */ = {
+		1D07DBF21B700C6D007649AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E38011B61A19300342E7A /* Info.plist */,
+				1D07DBF31B700C6D007649AE /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1D6E38151B61A19400342E7A /* DarwinTests */ = {
+		1D07DC0B1B700C6F007649AE /* DarwinTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E38181B61A19400342E7A /* DarwinTests.swift */,
-				1D6E38161B61A19400342E7A /* Supporting Files */,
+				1D07DC0C1B700C6F007649AE /* DarwinTests.m */,
+				1D07DC0E1B700C6F007649AE /* Info.plist */,
 			);
 			path = DarwinTests;
 			sourceTree = "<group>";
 		};
-		1D6E38161B61A19400342E7A /* Supporting Files */ = {
+		1D07DC161B700C6F007649AE /* DarwinUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E38171B61A19400342E7A /* Info.plist */,
+				1D07DC171B700C6F007649AE /* DarwinUITests.m */,
+				1D07DC191B700C6F007649AE /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		55E22CF7D73055A0C6B1936E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5C504E2055A801D2B19D6C16 /* Pods.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D6799EE4766D16E205C9DC27 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				703A70330E14716C6F5634E4 /* Pods.debug.xcconfig */,
-				84F0B0FF78BD50FCD5078C0A /* Pods.release.xcconfig */,
-			);
-			name = Pods;
+			path = DarwinUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6E37FC1B61A19300342E7A /* Darwin */ = {
+		1D07DBEE1B700C6D007649AE /* Darwin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6E381C1B61A19400342E7A /* Build configuration list for PBXNativeTarget "Darwin" */;
+			buildConfigurationList = 1D07DC1C1B700C6F007649AE /* Build configuration list for PBXNativeTarget "Darwin" */;
 			buildPhases = (
-				567E2EE0F971A529B14917DE /* Check Pods Manifest.lock */,
-				1D6E37F91B61A19300342E7A /* Sources */,
-				1D6E37FA1B61A19300342E7A /* Frameworks */,
-				1D6E37FB1B61A19300342E7A /* Resources */,
-				2C86C25993B72B147D85BEA0 /* Embed Pods Frameworks */,
-				F051A8B093763895289B7654 /* Copy Pods Resources */,
+				1D07DBEB1B700C6D007649AE /* Sources */,
+				1D07DBEC1B700C6D007649AE /* Frameworks */,
+				1D07DBED1B700C6D007649AE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -156,46 +157,69 @@
 			);
 			name = Darwin;
 			productName = Darwin;
-			productReference = 1D6E37FD1B61A19300342E7A /* Darwin.app */;
+			productReference = 1D07DBEF1B700C6D007649AE /* Darwin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1D6E38111B61A19400342E7A /* DarwinTests */ = {
+		1D07DC071B700C6F007649AE /* DarwinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6E381F1B61A19400342E7A /* Build configuration list for PBXNativeTarget "DarwinTests" */;
+			buildConfigurationList = 1D07DC1F1B700C6F007649AE /* Build configuration list for PBXNativeTarget "DarwinTests" */;
 			buildPhases = (
-				1D6E380E1B61A19400342E7A /* Sources */,
-				1D6E380F1B61A19400342E7A /* Frameworks */,
-				1D6E38101B61A19400342E7A /* Resources */,
+				1D07DC041B700C6F007649AE /* Sources */,
+				1D07DC051B700C6F007649AE /* Frameworks */,
+				1D07DC061B700C6F007649AE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D6E38141B61A19400342E7A /* PBXTargetDependency */,
+				1D07DC0A1B700C6F007649AE /* PBXTargetDependency */,
 			);
 			name = DarwinTests;
 			productName = DarwinTests;
-			productReference = 1D6E38121B61A19400342E7A /* DarwinTests.xctest */;
+			productReference = 1D07DC081B700C6F007649AE /* DarwinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D07DC121B700C6F007649AE /* DarwinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D07DC221B700C6F007649AE /* Build configuration list for PBXNativeTarget "DarwinUITests" */;
+			buildPhases = (
+				1D07DC0F1B700C6F007649AE /* Sources */,
+				1D07DC101B700C6F007649AE /* Frameworks */,
+				1D07DC111B700C6F007649AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D07DC151B700C6F007649AE /* PBXTargetDependency */,
+			);
+			name = DarwinUITests;
+			productName = DarwinUITests;
+			productReference = 1D07DC131B700C6F007649AE /* DarwinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1D6E37F51B61A19300342E7A /* Project object */ = {
+		1D07DBE71B700C6D007649AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Avinity Corporation";
 				TargetAttributes = {
-					1D6E37FC1B61A19300342E7A = {
-						CreatedOnToolsVersion = 6.2;
+					1D07DBEE1B700C6D007649AE = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4U3J4M8YSJ;
 					};
-					1D6E38111B61A19400342E7A = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 1D6E37FC1B61A19300342E7A;
+					1D07DC071B700C6F007649AE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1D07DBEE1B700C6D007649AE;
+					};
+					1D07DC121B700C6F007649AE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1D07DBEE1B700C6D007649AE;
 					};
 				};
 			};
-			buildConfigurationList = 1D6E37F81B61A19300342E7A /* Build configuration list for PBXProject "Darwin" */;
+			buildConfigurationList = 1D07DBEA1B700C6D007649AE /* Build configuration list for PBXProject "Darwin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,29 +227,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 1D6E37F41B61A19300342E7A;
-			productRefGroup = 1D6E37FE1B61A19300342E7A /* Products */;
+			mainGroup = 1D07DBE61B700C6D007649AE;
+			productRefGroup = 1D07DBF01B700C6D007649AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6E37FC1B61A19300342E7A /* Darwin */,
-				1D6E38111B61A19400342E7A /* DarwinTests */,
+				1D07DBEE1B700C6D007649AE /* Darwin */,
+				1D07DC071B700C6F007649AE /* DarwinTests */,
+				1D07DC121B700C6F007649AE /* DarwinUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D6E37FB1B61A19300342E7A /* Resources */ = {
+		1D07DBED1B700C6D007649AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6E38081B61A19300342E7A /* Main.storyboard in Resources */,
-				1D6E380D1B61A19300342E7A /* LaunchScreen.xib in Resources */,
-				1D6E380A1B61A19300342E7A /* Images.xcassets in Resources */,
+				1D07DC021B700C6D007649AE /* LaunchScreen.storyboard in Resources */,
+				1D07DBFF1B700C6D007649AE /* Assets.xcassets in Resources */,
+				1D07DBFD1B700C6D007649AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D6E38101B61A19400342E7A /* Resources */ = {
+		1D07DC061B700C6F007649AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D07DC111B700C6F007649AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,103 +266,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2C86C25993B72B147D85BEA0 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		567E2EE0F971A529B14917DE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F051A8B093763895289B7654 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		1D6E37F91B61A19300342E7A /* Sources */ = {
+		1D07DBEB1B700C6D007649AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6E38051B61A19300342E7A /* ViewController.swift in Sources */,
-				1D6E38031B61A19300342E7A /* AppDelegate.swift in Sources */,
+				1D07DBFA1B700C6D007649AE /* ViewController.m in Sources */,
+				1D07DBF71B700C6D007649AE /* AppDelegate.m in Sources */,
+				1D07DBF41B700C6D007649AE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D6E380E1B61A19400342E7A /* Sources */ = {
+		1D07DC041B700C6F007649AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6E38191B61A19400342E7A /* DarwinTests.swift in Sources */,
+				1D07DC0D1B700C6F007649AE /* DarwinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D07DC0F1B700C6F007649AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D07DC181B700C6F007649AE /* DarwinUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D6E38141B61A19400342E7A /* PBXTargetDependency */ = {
+		1D07DC0A1B700C6F007649AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1D6E37FC1B61A19300342E7A /* Darwin */;
-			targetProxy = 1D6E38131B61A19400342E7A /* PBXContainerItemProxy */;
+			target = 1D07DBEE1B700C6D007649AE /* Darwin */;
+			targetProxy = 1D07DC091B700C6F007649AE /* PBXContainerItemProxy */;
+		};
+		1D07DC151B700C6F007649AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D07DBEE1B700C6D007649AE /* Darwin */;
+			targetProxy = 1D07DC141B700C6F007649AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D6E38061B61A19300342E7A /* Main.storyboard */ = {
+		1D07DBFB1B700C6D007649AE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D6E38071B61A19300342E7A /* Base */,
+				1D07DBFC1B700C6D007649AE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1D6E380B1B61A19300342E7A /* LaunchScreen.xib */ = {
+		1D07DC001B700C6D007649AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D6E380C1B61A19300342E7A /* Base */,
+				1D07DC011B700C6D007649AE /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1D6E381A1B61A19400342E7A /* Debug */ = {
+		1D07DC1A1B700C6F007649AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,31 +347,32 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1D6E381B1B61A19400342E7A /* Release */ = {
+		1D07DC1B1B700C6F007649AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,16 +391,18 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,93 +410,119 @@
 			};
 			name = Release;
 		};
-		1D6E381D1B61A19400342E7A /* Debug */ = {
+		1D07DC1D1B700C6F007649AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 703A70330E14716C6F5634E4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Darwin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.Darwin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		1D6E381E1B61A19400342E7A /* Release */ = {
+		1D07DC1E1B700C6F007649AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84F0B0FF78BD50FCD5078C0A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Darwin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.Darwin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		1D6E38201B61A19400342E7A /* Debug */ = {
+		1D07DC201B700C6F007649AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = DarwinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.DarwinTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin.app/Darwin";
 			};
 			name = Debug;
 		};
-		1D6E38211B61A19400342E7A /* Release */ = {
+		1D07DC211B700C6F007649AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = DarwinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.DarwinTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin.app/Darwin";
+			};
+			name = Release;
+		};
+		1D07DC231B700C6F007649AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DarwinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.DarwinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Darwin;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1D07DC241B700C6F007649AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DarwinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Avinity-Corporation.DarwinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Darwin;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6E37F81B61A19300342E7A /* Build configuration list for PBXProject "Darwin" */ = {
+		1D07DBEA1B700C6D007649AE /* Build configuration list for PBXProject "Darwin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D6E381A1B61A19400342E7A /* Debug */,
-				1D6E381B1B61A19400342E7A /* Release */,
+				1D07DC1A1B700C6F007649AE /* Debug */,
+				1D07DC1B1B700C6F007649AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D6E381C1B61A19400342E7A /* Build configuration list for PBXNativeTarget "Darwin" */ = {
+		1D07DC1C1B700C6F007649AE /* Build configuration list for PBXNativeTarget "Darwin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D6E381D1B61A19400342E7A /* Debug */,
-				1D6E381E1B61A19400342E7A /* Release */,
+				1D07DC1D1B700C6F007649AE /* Debug */,
+				1D07DC1E1B700C6F007649AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		1D6E381F1B61A19400342E7A /* Build configuration list for PBXNativeTarget "DarwinTests" */ = {
+		1D07DC1F1B700C6F007649AE /* Build configuration list for PBXNativeTarget "DarwinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D6E38201B61A19400342E7A /* Debug */,
-				1D6E38211B61A19400342E7A /* Release */,
+				1D07DC201B700C6F007649AE /* Debug */,
+				1D07DC211B700C6F007649AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		1D07DC221B700C6F007649AE /* Build configuration list for PBXNativeTarget "DarwinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D07DC231B700C6F007649AE /* Debug */,
+				1D07DC241B700C6F007649AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1D6E37F51B61A19300342E7A /* Project object */;
+	rootObject = 1D07DBE71B700C6D007649AE /* Project object */;
 }

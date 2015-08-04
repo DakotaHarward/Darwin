@@ -13,7 +13,10 @@ def startSocket():
     print "test message2"
 @app.route('/')
 def load():
-    return render_template("index.html")
+    return render_template("betaIndex.html")
+@app.route('/launch')
+def loadLaunch():
+    return render_template("testLaunch.html")
 
 if __name__ == "__main__":
     socketio.run(app, "localhost", 80)

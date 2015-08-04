@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D07DBEE1B700C6D007649AE"
-               BuildableName = "Darwin.app"
-               BlueprintName = "Darwin"
-               ReferencedContainer = "container:Darwin.xcodeproj">
+               BlueprintIdentifier = "1D07DC2D1B7133FB007649AE"
+               BuildableName = "Darwin BETA.app"
+               BlueprintName = "Darwin BETA"
+               ReferencedContainer = "container:Darwin BETA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D07DC071B700C6F007649AE"
-               BuildableName = "DarwinTests.xctest"
-               BlueprintName = "DarwinTests"
-               ReferencedContainer = "container:Darwin.xcodeproj">
+               BlueprintIdentifier = "1D07DC491B7133FC007649AE"
+               BuildableName = "Darwin BETATests.xctest"
+               BlueprintName = "Darwin BETATests"
+               ReferencedContainer = "container:Darwin BETA.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D07DC121B700C6F007649AE"
-               BuildableName = "DarwinUITests.xctest"
-               BlueprintName = "DarwinUITests"
-               ReferencedContainer = "container:Darwin.xcodeproj">
+               BlueprintIdentifier = "1D07DC541B7133FD007649AE"
+               BuildableName = "Darwin BETAUITests.xctest"
+               BlueprintName = "Darwin BETAUITests"
+               ReferencedContainer = "container:Darwin BETA.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D07DBEE1B700C6D007649AE"
-            BuildableName = "Darwin.app"
-            BlueprintName = "Darwin"
-            ReferencedContainer = "container:Darwin.xcodeproj">
+            BlueprintIdentifier = "1D07DC2D1B7133FB007649AE"
+            BuildableName = "Darwin BETA.app"
+            BlueprintName = "Darwin BETA"
+            ReferencedContainer = "container:Darwin BETA.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D07DBEE1B700C6D007649AE"
-            BuildableName = "Darwin.app"
-            BlueprintName = "Darwin"
-            ReferencedContainer = "container:Darwin.xcodeproj">
+            BlueprintIdentifier = "1D07DC2D1B7133FB007649AE"
+            BuildableName = "Darwin BETA.app"
+            BlueprintName = "Darwin BETA"
+            ReferencedContainer = "container:Darwin BETA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D07DBEE1B700C6D007649AE"
-            BuildableName = "Darwin.app"
-            BlueprintName = "Darwin"
-            ReferencedContainer = "container:Darwin.xcodeproj">
+            BlueprintIdentifier = "1D07DC2D1B7133FB007649AE"
+            BuildableName = "Darwin BETA.app"
+            BlueprintName = "Darwin BETA"
+            ReferencedContainer = "container:Darwin BETA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
