@@ -13,7 +13,7 @@ GPIO.setup(2, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 reset = True
 
 def twistedServer():
-    class RaspberryLight(Protocol):
+    def RaspberryLight(Protocol):
 	def connectionMade(self):
 		#self.transport.write("""connected""")
 		self.factory.clients.append(self)
@@ -71,17 +71,14 @@ def socketServer():
         return render_template("testLaunch.html")
 
     if __name__ == "__main__":
-        socketio.run(app, "192.168.1.25", 80)
+        socketio.run(app, "localhost", 80)
 
-##twisted = Thread(target=twistedServer)
-##twisted.daemon = True
-##twisted.start()
+twisted = Thread(target=twistedServer)
+twisted.start()
 
 socket = Thread(target=socketServer)
-socket.daemon = True
 socket.start()
 
-twistedServer()
 ##def doorSensor():
 ##    global reset
 ##    while True:
