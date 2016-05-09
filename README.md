@@ -1,2 +1,2 @@
 # Darwin
-My personal assistant.
+The last personal assistant you'll ever need. Period.
