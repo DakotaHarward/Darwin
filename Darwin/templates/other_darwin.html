@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Darwin</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/skel.min.js"></script>
+    <script src="../static/js/skel-layers.min.js"></script>
+    <script src="../static/js/init.js"></script>
+    <script src="../static/js/socket.io.js"></script>
+    <script>
+        var socket = io.connect();
+        socket.on('news', function(data) {
+            console.log(data);
+            socket.emit('my other event', {
+                my: 'data'
+            });
+        });
+        function changeAlarm(){
+            console.log("clicked");
+            socket.emit('alarmChange', {
+                hour: document.getElementById('hourfield').value,
+                min: document.getElementById('minutefield').value
+            });
+        }
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="../static/css/skel.css" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/style-xlarge.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Darwin</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="darwin_home.html">Home</a></li>
+                <li><a href="other_darwin.html">Other Darwin</a></li>
+                <li><a href="index.html">Stop Darwin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section id="darwinbackground">
+        <div class="container">
+
+            <header class="major">
+                <h2>Hello Sir. It's Nice To See You.</h2>
+                <p>Below you can adjust the settings to your liking.</p>
+            </header>
+            <h3>Please Enter The Time You Would Like To Wake Up At (Military Time Please):</h3>
+            <p>Please Enter Hour:</p>
+            <input id="hourfield" type="text" placeholder="Hour (format HH)" value=""></input>
+            <p>Please Enter Minute:</p>
+            <input id="minutefield" type="text" placeholder="Minute (format MM)" value=""></input>
+            <a id="enteralarm" onclick="changeAlarm()" class="button default" style="margin: 10px;">Save Settings</a>
+            <a id="cancelalarm" class="button default" style="margin: 10px;">Cancel</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <section class="4u 6u(medium) 12u$(small)">
+                    <h3>Darwin</h3>
+                    <p>The last personal assitant you'll ever need. Period.</p>
+                    <ul class="alt">
+                    </ul>
+                </section>
+            </div>
+            <ul class="copyright">
+                <li>&copy; 2015 Avinity Corporation. All rights reserved worldwide.</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

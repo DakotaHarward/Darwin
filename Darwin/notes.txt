@@ -1,0 +1,9 @@
+Kitten.remove({
+            _id: kitten.id
+        }, function (err) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log("YAY");
+            }
+        });
