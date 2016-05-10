@@ -19,22 +19,7 @@
     <script src="../static/js/skel-layers.min.js"></script>
     <script src="../static/js/init.js"></script>
     <script src="../static/js/socket.io.js"></script>
-    <script>
-        var socket = io.connect();
-        socket.on('news', function(data) {
-            console.log(data);
-            socket.emit('my other event', {
-                my: 'data'
-            });
-        });
-        function changeAlarm(){
-            console.log("clicked");
-            socket.emit('alarmChange', {
-                hour: document.getElementById('hourfield').value,
-                min: document.getElementById('minutefield').value
-            });
-        }
-    </script>
+    <script src="../static/js/darwin.js"></script>
     <noscript>
         <link rel="stylesheet" href="../static/css/skel.css" />
         <link rel="stylesheet" href="../static/css/style.css" />
@@ -51,7 +36,7 @@
         <nav id="nav">
             <ul>
                 <li><a href="darwin_home.html">Home</a></li>
-                <li><a href="other_darwin.html">Other Darwin</a></li>
+                <li><a href="other_darwin.html" class="active">Other Darwin</a></li>
                 <li><a href="index.html">Stop Darwin</a></li>
             </ul>
         </nav>

@@ -4,6 +4,9 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var mongoose = require('mongoose');
 var db = mongoose.connection;
+var time = require('time');
+var now = new time.Date();
+now.setTimezone("America/Denver");
 var alarmSchema = mongoose.Schema({
     title: String,
     alert: Boolean,
@@ -19,6 +22,32 @@ var alarm = new Alarm({
     min: 00,
     tag: "AM"
 });
+
+function alarm() {
+    Alarm.findOne({
+        title: "Wakeup"
+    }, function (err, foundAlarm) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("got to before boolean thing.")
+            if (foundAlarm.alert) {
+                console.log("got to after boolean thing.")
+                setInterval(function () {
+                    console.log("in loop");
+                    var setHour = foundAlarm.hour;
+                    var setMin = foundAlarm.min;
+                    var realHour = now.getHours();
+                    var realMin = now.getMinutes();
+                    if (setHour == realHour && setMin == realMin) {
+                        socket.broadcast.emit('soundAlarm');
+                        console.log("should be sounding");
+                    }
+                }, 1000);
+            }
+        }
+    });
+}
 
 server.listen(80, function () {
     console.log("Now listening on port 80.");
@@ -47,6 +76,7 @@ db.once('open', function () {
 });
 
 io.on('connection', function (socket) {
+    alarm();
     socket.on('alarmChange', function (data) {
         Alarm.findOne({
             title: "Wakeup"
@@ -57,9 +87,40 @@ io.on('connection', function (socket) {
             foundAlarm.hour = data.hour;
             foundAlarm.min = data.min;
             console.log(foundAlarm);
+            alarm.save(function (err, silence) {
+                if (err) return console.error(err);
+                console.log("saved.");
+            });
         });
     });
 });
+
+function alarm() {
+    Alarm.findOne({
+        title: "Wakeup"
+    }, function (err, foundAlarm) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("got to before boolean thing.")
+            if (foundAlarm.alert) {
+                console.log("got to after boolean thing.")
+                setInterval(function () {
+                    console.log("in loop");
+                    var setHour = foundAlarm.hour;
+                    var setMin = foundAlarm.min;
+                    var realHour = now.getHours();
+                    var realMin = now.getMinutes();
+                    console.log("Set: " + setHour + ":" + setMin + " Real: " + realHour + ":" + realMin);
+                    if (setHour == realHour && setMin == realMin) {
+                        socket.broadcast.emit('soundAlarm');
+                        console.log("should be sounding");
+                    }
+                }, 1000);
+            }
+        }
+    });
+}
 
 app.use('/static', express.static(__dirname + '/static'));
 
