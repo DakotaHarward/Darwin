@@ -20,7 +20,7 @@ socket.on('values', function (data) {
     console.log(alarmSet);
 });
 socket.on('alarmOff', function (data) {
-   $(document.getElementById('alarmButton')).fadeOut(1000);
+    $(document.getElementById('alarmButton')).fadeOut(1000);
     $(document.getElementById('mainStuff')).fadeIn(1000);
 });
 
@@ -88,4 +88,22 @@ function toggleOverlay(modalName) {
 function alarmOff() {
     console.log("sent off");
     socket.emit('alarmOff');
+}
+
+function annyangStart() {
+    if (annyang) {
+        // Let's define a command.
+        var commands = {
+            'hello darwin': function () {
+                responsiveVoice.speak("Good afternoon sir.", "UK English Male");
+            }
+        };
+
+        // Add our commands to annyang
+        annyang.addCommands(commands);
+
+        // Start listening.
+        annyang.start();
+        console.log("started");
+    }
 }

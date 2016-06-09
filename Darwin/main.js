@@ -1,7 +1,12 @@
+var fs = require('fs');
+var https = require('https');
+var privateKey  = fs.readFileSync('static/secure/darwin.key', 'utf8');
+var certificate = fs.readFileSync('static/secure/darwin.crt', 'utf8');
+var credentials = {key: privateKey, cert: certificate};
 var express = require('express');
 var app = express();
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
+var httpsServer = https.createServer(credentials, app);
+var io = require('socket.io')(httpsServer);
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 var alarmSounding;
@@ -19,8 +24,8 @@ var alarm = new Alarm({
     min: 00
 });
 
-server.listen(80, function () {
-    console.log("Now listening on port 80.");
+httpsServer.listen(8080, function () {
+    console.log("Now listening on port 8080 https.");
 });
 
 mongoose.connect('mongodb://localhost/Darwin');
@@ -67,7 +72,7 @@ io.on('connection', function (socket) {
     }
 
     function alarmFunction() {
-        setInterval(function () {
+        var alarmInterval = setInterval(function () {
             Alarm.findOne({
                 title: "Wakeup"
             }, function (err, foundAlarm) {
@@ -82,11 +87,13 @@ io.on('connection', function (socket) {
                         var realMin = now.getMinutes();
                         if (setHour == realHour && setMin == realMin) {
                             alarmSounding = true;
-                            setInterval(function () {
+                            var alarmSoundingInterval = setInterval(function () {
                                 if (alarmSounding) {
+                                    clearInterval(alarmInterval);
                                     console.log("sounding");
-                                    socket.broadcast.emit('soundAlarm');
+                                    socket.emit('soundAlarm');
                                 } else {
+                                    clearInterval(alarmSoundingInterval);
                                     alarmFunction();
                                 }
                             }, 500);
@@ -116,6 +123,7 @@ io.on('connection', function (socket) {
     });
     socket.on('alarmOff', function (data) {
         console.log("alarm off");
+        socket.emit("alarmOff");
         alarmSounding = false;
     });
 });
