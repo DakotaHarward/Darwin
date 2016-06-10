@@ -91,11 +91,17 @@ function alarmOff() {
 }
 
 function annyangStart() {
+    annyang.pause();
+    responsiveVoice.speak("Good afternoon. I am now active.", "UK English Male");
+    annyang.resume();
     if (annyang) {
         // Let's define a command.
         var commands = {
             'hello darwin': function () {
+                console.log("said hello");
+                annyang.pause();
                 responsiveVoice.speak("Good afternoon sir.", "UK English Male");
+                annyange.resume();
             }
         };
 

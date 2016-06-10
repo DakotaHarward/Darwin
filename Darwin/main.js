@@ -1,15 +1,18 @@
 var fs = require('fs');
 var https = require('https');
-var privateKey  = fs.readFileSync('static/secure/darwin.key', 'utf8');
+var privateKey = fs.readFileSync('static/secure/darwin.key', 'utf8');
 var certificate = fs.readFileSync('static/secure/darwin.crt', 'utf8');
-var credentials = {key: privateKey, cert: certificate};
+var credentials = {
+    key: privateKey,
+    cert: certificate
+};
 var express = require('express');
 var app = express();
 var httpsServer = https.createServer(credentials, app);
 var io = require('socket.io')(httpsServer);
 var mongoose = require('mongoose');
 var db = mongoose.connection;
-var alarmSounding;
+var alarmSounding = true;
 var alarmSchema = mongoose.Schema({
     title: String,
     alert: Boolean,
@@ -23,6 +26,9 @@ var alarm = new Alarm({
     hour: 12,
     min: 00
 });
+var alarmGo = true;
+var alarmGoInterval;
+var bypass = false;
 
 httpsServer.listen(8080, function () {
     console.log("Now listening on port 8080 https.");
@@ -85,18 +91,20 @@ io.on('connection', function (socket) {
                         var setMin = foundAlarm.min;
                         var realHour = now.getHours();
                         var realMin = now.getMinutes();
-                        if (setHour == realHour && setMin == realMin) {
-                            alarmSounding = true;
-                            var alarmSoundingInterval = setInterval(function () {
-                                if (alarmSounding) {
-                                    clearInterval(alarmInterval);
-                                    console.log("sounding");
-                                    socket.emit('soundAlarm');
-                                } else {
-                                    clearInterval(alarmSoundingInterval);
-                                    alarmFunction();
-                                }
-                            }, 500);
+                        if (setHour == realHour && setMin == realMin && alarmGo || bypass) {
+                            if (alarmSounding) {
+                                bypass = true;
+                                console.log("sounding");
+                                socket.emit('soundAlarm');
+                            } else {
+                                bypass = false;
+                                console.log("on the else now");
+                                alarmGo = false;
+                                alarmGoChange('normalTrue');
+                                alarmSounding = true;
+                                clearInterval(alarmInterval);
+                                alarmFunction();
+                            }
                         }
                     }
                 }
@@ -119,6 +127,7 @@ io.on('connection', function (socket) {
                 console.log("saved.");
                 values();
             });
+            alarmGoChange('immediateTrue');
         });
     });
     socket.on('alarmOff', function (data) {
@@ -127,6 +136,32 @@ io.on('connection', function (socket) {
         alarmSounding = false;
     });
 });
+
+function alarmGoChange(order) {
+    if (order == "normalTrue") {
+        Alarm.findOne({
+            title: "Wakeup"
+        }, function (err, foundAlarm) {
+            if (err) {
+                console.log(err);
+            }
+            alarmGoInterval = setInterval(function () {
+                var now = new Date();
+                if (foundAlarm.hour != now.getHours() || foundAlarm.min != now.getMinutes()) {
+                    console.log("Set Hour: " + foundAlarm.hour);
+                    console.log("Real Hour: " + now.getHours());
+                    console.log("Set Min: " + foundAlarm.min);
+                    console.log("Real Min: " + now.getMinutes());
+                    alarmGo = true;
+                    clearInterval(alarmGoInterval);
+                }
+            }, 1000);
+        });
+    } else if (order == "immediateTrue") {
+        clearInterval(alarmGoInterval);
+        alarmGo = true;
+    }
+}
 
 app.use('/static', express.static(__dirname + '/static'));
 
