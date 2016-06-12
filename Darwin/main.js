@@ -132,7 +132,7 @@ io.on('connection', function (socket) {
     });
     socket.on('alarmOff', function (data) {
         console.log("alarm off");
-        socket.emit("alarmOff");
+        io.emit("alarmOff");
         alarmSounding = false;
     });
 });
