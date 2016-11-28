@@ -107,7 +107,7 @@ function annyangStart() {
                 console.log("asked time");
                 annyang.pause();
                 var words = "it is currently " + 8;
-                responsiveVoice.speak(words);
+                responsiveVoice.speak(words, "UK English Male");
                 annyang.resume();
             }
         };
