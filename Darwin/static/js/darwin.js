@@ -101,7 +101,14 @@ function annyangStart() {
                 console.log("said hello");
                 annyang.pause();
                 responsiveVoice.speak("Good afternoon sir.", "UK English Male");
-                annyange.resume();
+                annyang.resume();
+            },
+            'darwin what time is it': function () {
+                console.log("asked time");
+                annyang.pause();
+                var words = "it is currently " + 8;
+                responsiveVoice.speak(words);
+                annyang.resume();
             }
         };
 
